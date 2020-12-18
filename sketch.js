@@ -33,16 +33,15 @@ function draw() {
   background(255);
   
   drawSprites();
-   ball.display();
    ground.display();
    bin.display();
    bin2.display();
    bin1.display();
    image(binImg,488,580,175,110);
-   
+   ball.display();
 
    if(keyDown(UP_ARROW)){
-     Matter.Body.applyForce(ball.body,ball.body.position,{x:2,y:-2}) 
+     Matter.Body.applyForce(ball.body,ball.body.position,{x:20,y:-40}) 
 }
 }
 
